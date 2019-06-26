@@ -21,5 +21,10 @@ namespace TrackerUI
         {
 
         }
+
+        private void TrackerViewerForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

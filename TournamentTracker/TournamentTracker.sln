@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrackerLibrary", "TrackerLi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrackerUI", "TrackerUI\TrackerUI.csproj", "{40C90893-D742-4595-8945-95AF9C21092D}"
 EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "TTDataBase", "TTDataBase\TTDataBase.sqlproj", "{ED1EBA39-DD49-449B-9758-45C768B18EA1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,12 @@ Global
 		{40C90893-D742-4595-8945-95AF9C21092D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{40C90893-D742-4595-8945-95AF9C21092D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{40C90893-D742-4595-8945-95AF9C21092D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED1EBA39-DD49-449B-9758-45C768B18EA1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED1EBA39-DD49-449B-9758-45C768B18EA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED1EBA39-DD49-449B-9758-45C768B18EA1}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{ED1EBA39-DD49-449B-9758-45C768B18EA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED1EBA39-DD49-449B-9758-45C768B18EA1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED1EBA39-DD49-449B-9758-45C768B18EA1}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
