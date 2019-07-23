@@ -122,12 +122,18 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\TrackerLibrary\TrackerLibrary.csproj">
       <Project>{aa13a02d-24e5-4cd1-93e6-bef68839bafd}</Project>
       <Name>TrackerLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TTDataBase\TTDataBase.sqlproj">
+      <Project>{ed1eba39-dd49-449b-9758-45c768b18ea1}</Project>
+      <Name>TTDataBase</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
