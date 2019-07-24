@@ -17,7 +17,6 @@ namespace TrackerLibrary
 
             if (db == DatabaseType.Sql)
             {
-               //TODO - Set up SQL Connector properly
                 SqlConnector sql = new SqlConnector();
                 Connection = sql;
             }
