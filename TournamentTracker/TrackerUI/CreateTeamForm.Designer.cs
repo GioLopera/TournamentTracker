@@ -150,12 +150,12 @@
             // 
             this.createNewMemberLabel.AutoSize = true;
             this.createNewMemberLabel.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.createNewMemberLabel.Location = new System.Drawing.Point(376, 174);
+            this.createNewMemberLabel.Location = new System.Drawing.Point(394, 174);
             this.createNewMemberLabel.Name = "createNewMemberLabel";
-            this.createNewMemberLabel.Size = new System.Drawing.Size(105, 28);
+            this.createNewMemberLabel.Size = new System.Drawing.Size(86, 28);
             this.createNewMemberLabel.TabIndex = 32;
             this.createNewMemberLabel.TabStop = true;
-            this.createNewMemberLabel.Text = "create new";
+            this.createNewMemberLabel.Text = "add new";
             this.createNewMemberLabel.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.createNewMemberLabel_LinkClicked);
             // 
             // CreateTeamForm
