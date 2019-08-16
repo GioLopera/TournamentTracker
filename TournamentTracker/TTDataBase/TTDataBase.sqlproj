@@ -87,5 +87,6 @@
     <Build Include="dbo\Stored Procedures\spPeople_Insert.sql" />
     <Build Include="dbo\Stored Procedures\spTeams_Insert.sql" />
     <Build Include="dbo\Stored Procedures\spTeamMembers_Insert.sql" />
+    <Build Include="dbo\Stored Procedures\spTeam_GetAll.sql" />
   </ItemGroup>
 </Project>
