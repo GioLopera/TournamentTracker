@@ -121,6 +121,7 @@
             this.createTeamButton.TabIndex = 31;
             this.createTeamButton.Text = "Create Team";
             this.createTeamButton.UseVisualStyleBackColor = false;
+            this.createTeamButton.Click += new System.EventHandler(this.createTeamButton_Click);
             // 
             // removeSelectedMemberButton
             // 

@@ -48,6 +48,8 @@ namespace TrackerUI
                 MessageBox.Show("You need to fill in all of the fields;");
             }
 
+            //TODO: Close the form after creation
+
         }
 
         //private void WiredUpLists()
