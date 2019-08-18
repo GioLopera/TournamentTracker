@@ -126,6 +126,7 @@
             this.createNewTeamLabel.TabIndex = 15;
             this.createNewTeamLabel.TabStop = true;
             this.createNewTeamLabel.Text = "create new";
+            this.createNewTeamLabel.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.createNewTeamLabel_LinkClicked);
             // 
             // addTeamButton
             // 
@@ -152,6 +153,7 @@
             this.createPrizeButton.TabIndex = 17;
             this.createPrizeButton.Text = "Create Prize";
             this.createPrizeButton.UseVisualStyleBackColor = true;
+            this.createPrizeButton.Click += new System.EventHandler(this.createPrizeButton_Click);
             // 
             // tournamentTeamsListBox
             // 
@@ -180,9 +182,9 @@
             this.teamPlayersLabel.ForeColor = System.Drawing.Color.Teal;
             this.teamPlayersLabel.Location = new System.Drawing.Point(536, 107);
             this.teamPlayersLabel.Name = "teamPlayersLabel";
-            this.teamPlayersLabel.Size = new System.Drawing.Size(229, 41);
+            this.teamPlayersLabel.Size = new System.Drawing.Size(108, 41);
             this.teamPlayersLabel.TabIndex = 20;
-            this.teamPlayersLabel.Text = "Teams / Players:";
+            this.teamPlayersLabel.Text = "Teams:";
             // 
             // prizesLabel
             // 
@@ -204,7 +206,7 @@
             this.deleteSelectedPlayersButton.Name = "deleteSelectedPlayersButton";
             this.deleteSelectedPlayersButton.Size = new System.Drawing.Size(152, 90);
             this.deleteSelectedPlayersButton.TabIndex = 22;
-            this.deleteSelectedPlayersButton.Text = "Delete Selected";
+            this.deleteSelectedPlayersButton.Text = "Remove Selected";
             this.deleteSelectedPlayersButton.UseVisualStyleBackColor = true;
             this.deleteSelectedPlayersButton.Click += new System.EventHandler(this.deleteSelectedPlayersButton_Click);
             // 
@@ -217,8 +219,9 @@
             this.deleteSelectedPrizesButton.Name = "deleteSelectedPrizesButton";
             this.deleteSelectedPrizesButton.Size = new System.Drawing.Size(152, 90);
             this.deleteSelectedPrizesButton.TabIndex = 23;
-            this.deleteSelectedPrizesButton.Text = "Delete Selected";
+            this.deleteSelectedPrizesButton.Text = "Remove Selected";
             this.deleteSelectedPrizesButton.UseVisualStyleBackColor = true;
+            this.deleteSelectedPrizesButton.Click += new System.EventHandler(this.deleteSelectedPrizesButton_Click);
             // 
             // createTournamentButton
             // 

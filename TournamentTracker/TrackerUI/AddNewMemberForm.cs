@@ -14,11 +14,13 @@ namespace TrackerUI
 {
     public partial class AddNewMemberForm : Form
     {
-        //private List<PersonModel> selectedTeamMembers = new List<PersonModel>();
+        IMemberRequester callingForm;
 
-        public AddNewMemberForm()
+        public AddNewMemberForm(IMemberRequester caller)
         {
             InitializeComponent();
+
+            callingForm = caller;
         }
 
         private void createMemberButton_Click(object sender, EventArgs e)
@@ -32,31 +34,19 @@ namespace TrackerUI
                 p.EmailAddress = emailValue.Text;
                 p.CellphoneNumber = cellphoneValue.Text;
 
-                p = GlobalConfig.Connection.CreatePerson(p);
+                GlobalConfig.Connection.CreatePerson(p);
 
-                //TODO: find a way to refresh the selectTeamMemberDropDown when click on createMemberButton
-                //selectedTeamMembers.Add(p);
-                //WiredUpLists();
+                callingForm.MemberComplite(p);
 
-                firstNameValue.Text = "";
-                lastNameValue.Text = "";
-                emailValue.Text = "";
-                cellphoneValue.Text = "";
+                this.Close();
+
             }
             else
             {
                 MessageBox.Show("You need to fill in all of the fields;");
             }
 
-            //TODO: Close the form after creation
-
         }
-
-        //private void WiredUpLists()
-        //{
-        //    teamMemberListBox.DataSource = selectedTeamMembers;
-        //    teamMemberListBox.DisplayMember = "FullName";
-        //}
 
         private bool ValidateForm()
         {
